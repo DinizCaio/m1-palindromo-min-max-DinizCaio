@@ -7,11 +7,10 @@ function isPalindrome(str) {
     }
   }
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] != arr[arr.length - 1]) {
+    if (arr[i] != arr[arr.length - 1 - i]) {
       return false;
-    } else {
-      return true;
     }
   }
+  return true;
 }
 function arrayMaxMin(arr) {}
